@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': '這是40823214的計算機程式的網站 \n', 'tags': '', 'url': 'About.html'}, {'title': 'Stage_1', 'text': '... \n', 'tags': '', 'url': 'Stage_1.html'}, {'title': 'Task_1', 'text': '\n 用Brython在網站上模擬python的程式', 'tags': '', 'url': 'Task_1.html'}]};
+var tipuesearch = {"pages": [{'title': 'About', 'text': '這是40823214的計算機程式的網站 \n', 'tags': '', 'url': 'About.html'}, {'title': 'Stage_1', 'text': '...... \n', 'tags': '', 'url': 'Stage_1.html'}, {'title': 'Task_1', 'text': '\n 用Brython在網站上模擬python的程式', 'tags': '', 'url': 'Task_1.html'}]};
