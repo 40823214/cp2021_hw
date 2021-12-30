@@ -622,7 +622,8 @@ doc['clear_bd'].bind('click', clear_bd)
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
-<h1>Brython</h1>
+<h3>demo_test</h3>
+<p>w</p><h1>Brython</h1>
 <p>123</p>
 <h2>run</h2>
 <p>使用gist導入URL</p>
@@ -806,6 +807,9 @@ doc['clear_bd'].bind('click', clear_bd)
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><h1>Final</h1>
 <p>雙人貪吃蛇</p>
 <p>綠色 :wsad 上下左右</p>
+<p>青色 : ikjl 上下左右</p>
+<p>注意!!</p>
+<p>撞到邊界或是撞到對手會判定失敗</p>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -877,7 +881,7 @@ run()
 </script>
 </p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor" style="width: 600px; height: 300px;">青色 : ikjl 上下左右</div>
+<div id="kw_editor" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
 <!-- 存擋表單開始 --><form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src', 'kw_filename');" type="submit" value="Save"/></form><!-- 存擋表單結束 -->
 <p></p>
