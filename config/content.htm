@@ -806,6 +806,9 @@ doc['clear_bd'].bind('click', clear_bd)
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><h1>Final</h1>
 <p>雙人貪吃蛇</p>
 <p>綠色 :wsad 上下左右</p>
+<p>青色 : ikjl 上下左右</p>
+<p>注意!!</p>
+<p>撞到邊界或是撞到對手會判定失敗</p>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -854,7 +857,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/40823214/559c9ba90bc4a3e5bc430a61a8fbd0e5/raw/1b34ca93dff4de6acf4f01872a581c4ddde178f8/double__snake.py"
+        url = "https://gist.githubusercontent.com/40823214/559c9ba90bc4a3e5bc430a61a8fbd0e5/raw/82811a447664cdcd249e6d6a13251943593011af/double__snake.py"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -877,7 +880,7 @@ run()
 </script>
 </p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor" style="width: 600px; height: 300px;">青色 : ikjl 上下左右</div>
+<div id="kw_editor" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
 <!-- 存擋表單開始 --><form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src', 'kw_filename');" type="submit" value="Save"/></form><!-- 存擋表單結束 -->
 <p></p>
