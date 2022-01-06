@@ -993,7 +993,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="sk">貪吃蛇</button><button id="dowsk">雙人貪吃蛇</button><button id="final_1">final_1</button><button id="final_2">final_2</button></p>
+<p><button id="sk">自動貪吃蛇</button><button id="dowsk">雙人貪吃蛇</button><button id="final_1">final_1</button><button id="final_2">final_2</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -1072,8 +1072,16 @@ class button2:
         Ace2.editor.scrollToRow(0)
         Ace2.editor.gotoLine(0)
         Ace2.run()
-
-
+################################## sk start
+sk_url = "https://gist.githubusercontent.com/40823214/c7d2af4586f1e685c2da8e5aa7ff86e3/raw/e3472bf636d49ec9f0406d1076b5b53de0338274/auto_snake.py"
+sk = button2(sk_url)
+doc["sk"].bind("click", sk.do)
+################################## dowsk end
+################################## dowsk start
+dowsk_url = "https://gist.githubusercontent.com/40823214/559c9ba90bc4a3e5bc430a61a8fbd0e5/raw/82811a447664cdcd249e6d6a13251943593011af/double__snake.py"
+dowsk = button2(dowsk_url)
+doc["dowsk"].bind("click", dowsk.do)
+################################## dowsk end
 ################################## final1 start
 final_1_url = "https://gist.githubusercontent.com/40823214/c629732430be0d571b2507142635fd05/raw/d3b46d1885d7d2ca143a612ecabe9af9c35ee8f2/final_1.py"
 final_1 = button2(final_1_url)
